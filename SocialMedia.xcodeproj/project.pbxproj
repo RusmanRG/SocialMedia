@@ -60,7 +60,7 @@
 		461E52BC1E670479000EB185 /* GFGeoHashQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHashQuery.m; sourceTree = "<group>"; };
 		461E52BD1E670479000EB185 /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
 		461E52BE1E670479000EB185 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
-		461E52C61E6704EE000EB185 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		461E52C61E6704EE000EB185 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "GeoFire/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6DF082F50DA5022537C31831 /* Pods-SocialMedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMedia.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialMedia/Pods-SocialMedia.release.xcconfig"; sourceTree = "<group>"; };
 		78645EA40DA635EA01DA5D75 /* Pods-SocialMediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMediaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialMediaTests/Pods-SocialMediaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		907A835EF93D675FB92F5763 /* Pods_SocialMediaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialMediaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +116,7 @@
 				461E52301E667BB8000EB185 /* Model */,
 				461E522F1E667BA6000EB185 /* Controllers */,
 				461E520F1E667B65000EB185 /* AppDelegate.swift */,
+				461E52C61E6704EE000EB185 /* GoogleService-Info.plist */,
 				461E52131E667B65000EB185 /* Main.storyboard */,
 				461E52181E667B65000EB185 /* LaunchScreen.storyboard */,
 			);
@@ -159,7 +160,6 @@
 		461E52AD1E670479000EB185 /* GeoFire */ = {
 			isa = PBXGroup;
 			children = (
-				461E52C61E6704EE000EB185 /* GoogleService-Info.plist */,
 				461E52AE1E670479000EB185 /* API */,
 				461E52B31E670479000EB185 /* GeoFire-Prefix.pch */,
 				461E52B41E670479000EB185 /* Implementation */,
