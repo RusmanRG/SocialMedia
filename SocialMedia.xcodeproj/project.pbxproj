@@ -20,6 +20,11 @@
 		461E52C21E670479000EB185 /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 461E52BC1E670479000EB185 /* GFGeoHashQuery.m */; };
 		461E52C31E670479000EB185 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 461E52BE1E670479000EB185 /* GFQuery.m */; };
 		461E52C71E6704EE000EB185 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 461E52C61E6704EE000EB185 /* GoogleService-Info.plist */; };
+		46EA48C91E699F34000669A9 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA48C81E699F34000669A9 /* FancyView.swift */; };
+		46EA48CC1E69A0E5000669A9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA48CB1E69A0E5000669A9 /* Constants.swift */; };
+		46EA48CE1E69A7CA000669A9 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA48CD1E69A7CA000669A9 /* RoundBtn.swift */; };
+		46EA48D21E69B5A4000669A9 /* TextFieldBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA48D11E69B5A4000669A9 /* TextFieldBorder.swift */; };
+		46EA48D41E6AF3F3000669A9 /* SigninBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA48D31E6AF3F3000669A9 /* SigninBtn.swift */; };
 		9D0D5BE978CB84A0A691C778 /* Pods_SocialMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B016F2DCDA46A2743D3CE3F9 /* Pods_SocialMedia.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +66,11 @@
 		461E52BD1E670479000EB185 /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
 		461E52BE1E670479000EB185 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
 		461E52C61E6704EE000EB185 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "GeoFire/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		46EA48C81E699F34000669A9 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		46EA48CB1E69A0E5000669A9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		46EA48CD1E69A7CA000669A9 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		46EA48D11E69B5A4000669A9 /* TextFieldBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldBorder.swift; sourceTree = "<group>"; };
+		46EA48D31E6AF3F3000669A9 /* SigninBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninBtn.swift; sourceTree = "<group>"; };
 		6DF082F50DA5022537C31831 /* Pods-SocialMedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMedia.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialMedia/Pods-SocialMedia.release.xcconfig"; sourceTree = "<group>"; };
 		78645EA40DA635EA01DA5D75 /* Pods-SocialMediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMediaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialMediaTests/Pods-SocialMediaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		907A835EF93D675FB92F5763 /* Pods_SocialMediaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialMediaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +122,8 @@
 		461E520E1E667B65000EB185 /* SocialMedia */ = {
 			isa = PBXGroup;
 			children = (
+				46EA48CA1E69A084000669A9 /* Util */,
+				46EA48C71E699ECA000669A9 /* View */,
 				461E52AD1E670479000EB185 /* GeoFire */,
 				461E52301E667BB8000EB185 /* Model */,
 				461E522F1E667BA6000EB185 /* Controllers */,
@@ -193,6 +205,25 @@
 				461E52BE1E670479000EB185 /* GFQuery.m */,
 			);
 			path = Implementation;
+			sourceTree = "<group>";
+		};
+		46EA48C71E699ECA000669A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46EA48C81E699F34000669A9 /* FancyView.swift */,
+				46EA48CD1E69A7CA000669A9 /* RoundBtn.swift */,
+				46EA48D11E69B5A4000669A9 /* TextFieldBorder.swift */,
+				46EA48D31E6AF3F3000669A9 /* SigninBtn.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		46EA48CA1E69A084000669A9 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				46EA48CB1E69A0E5000669A9 /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		9614256258BEFFDBDDA0224A /* Frameworks */ = {
@@ -421,12 +452,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				461E52C01E670479000EB185 /* GFBase32Utils.m in Sources */,
+				46EA48CE1E69A7CA000669A9 /* RoundBtn.swift in Sources */,
 				461E52121E667B65000EB185 /* SigninVC.swift in Sources */,
 				461E52C11E670479000EB185 /* GFGeoHash.m in Sources */,
 				461E52101E667B65000EB185 /* AppDelegate.swift in Sources */,
 				461E52BF1E670479000EB185 /* GeoFire.m in Sources */,
+				46EA48D41E6AF3F3000669A9 /* SigninBtn.swift in Sources */,
+				46EA48D21E69B5A4000669A9 /* TextFieldBorder.swift in Sources */,
 				461E52C21E670479000EB185 /* GFGeoHashQuery.m in Sources */,
+				46EA48C91E699F34000669A9 /* FancyView.swift in Sources */,
 				461E52C31E670479000EB185 /* GFQuery.m in Sources */,
+				46EA48CC1E69A0E5000669A9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
