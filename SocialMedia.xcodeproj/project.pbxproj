@@ -607,6 +607,7 @@
 				DEVELOPMENT_TEAM = 95F8PNQ5H2;
 				INFOPLIST_FILE = SocialMedia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "App-Whole.SocialMedia";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -621,6 +622,7 @@
 				DEVELOPMENT_TEAM = 95F8PNQ5H2;
 				INFOPLIST_FILE = SocialMedia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "App-Whole.SocialMedia";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
