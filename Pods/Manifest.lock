@@ -56,7 +56,17 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
-  - SwiftKeychainWrapper
+  - SwiftKeychainWrapper (from `https://github.com/jrendel/SwiftKeychainWrapper.git`, branch `master`)
+
+EXTERNAL SOURCES:
+  SwiftKeychainWrapper:
+    :branch: master
+    :git: https://github.com/jrendel/SwiftKeychainWrapper.git
+
+CHECKOUT OPTIONS:
+  SwiftKeychainWrapper:
+    :commit: 46e5980ee7630be015aae6a6307c2fe1e8f3661d
+    :git: https://github.com/jrendel/SwiftKeychainWrapper.git
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
@@ -71,8 +81,8 @@ SPEC CHECKSUMS:
   FirebaseStorage: a5c55b23741a49a72af8f30f95b3bb5ddbeda12d
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 6f8d8b28b7e345549ac471071608170b31cb4977
-  SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
+  SwiftKeychainWrapper: e353c2d5ac22e72ff7c1dc3b1de1f0e7341ba030
 
-PODFILE CHECKSUM: d45386cded716395ff2e1005a175080d35f5ae80
+PODFILE CHECKSUM: 5ee0190b9901a72bd803a3d8da5ce6a5ef6f0729
 
 COCOAPODS: 1.2.0

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A6243F7C71E0B3B63B96A4A /* Pods_SocialMediaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A835EF93D675FB92F5763 /* Pods_SocialMediaTests.framework */; };
 		461E52101E667B65000EB185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461E520F1E667B65000EB185 /* AppDelegate.swift */; };
 		461E52121E667B65000EB185 /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461E52111E667B65000EB185 /* SigninVC.swift */; };
 		461E52151E667B65000EB185 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461E52131E667B65000EB185 /* Main.storyboard */; };
@@ -39,7 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02FCFD5A83D8A0DCF7E68582 /* Pods-SocialMediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMediaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialMediaTests/Pods-SocialMediaTests.release.xcconfig"; sourceTree = "<group>"; };
 		461E520C1E667B65000EB185 /* SocialMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		461E520F1E667B65000EB185 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		461E52111E667B65000EB185 /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
@@ -72,7 +70,6 @@
 		46EA48D11E69B5A4000669A9 /* TextFieldBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldBorder.swift; sourceTree = "<group>"; };
 		46EA48D31E6AF3F3000669A9 /* SigninBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninBtn.swift; sourceTree = "<group>"; };
 		6DF082F50DA5022537C31831 /* Pods-SocialMedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMedia.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialMedia/Pods-SocialMedia.release.xcconfig"; sourceTree = "<group>"; };
-		78645EA40DA635EA01DA5D75 /* Pods-SocialMediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMediaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialMediaTests/Pods-SocialMediaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		907A835EF93D675FB92F5763 /* Pods_SocialMediaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialMediaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5252CCF6A7544DC840FBEDF /* Pods-SocialMedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMedia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialMedia/Pods-SocialMedia.debug.xcconfig"; sourceTree = "<group>"; };
 		B016F2DCDA46A2743D3CE3F9 /* Pods_SocialMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialMedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,7 +88,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A6243F7C71E0B3B63B96A4A /* Pods_SocialMediaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,8 +236,6 @@
 			children = (
 				A5252CCF6A7544DC840FBEDF /* Pods-SocialMedia.debug.xcconfig */,
 				6DF082F50DA5022537C31831 /* Pods-SocialMedia.release.xcconfig */,
-				78645EA40DA635EA01DA5D75 /* Pods-SocialMediaTests.debug.xcconfig */,
-				02FCFD5A83D8A0DCF7E68582 /* Pods-SocialMediaTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -273,12 +267,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 461E522C1E667B65000EB185 /* Build configuration list for PBXNativeTarget "SocialMediaTests" */;
 			buildPhases = (
-				4343554701EEDDAADA2C9134 /* [CP] Check Pods Manifest.lock */,
 				461E521C1E667B65000EB185 /* Sources */,
 				461E521D1E667B65000EB185 /* Frameworks */,
 				461E521E1E667B65000EB185 /* Resources */,
-				221CBE577422544599960B06 /* [CP] Embed Pods Frameworks */,
-				31361099133902F2E524C491 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -354,51 +345,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		221CBE577422544599960B06 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialMediaTests/Pods-SocialMediaTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		31361099133902F2E524C491 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialMediaTests/Pods-SocialMediaTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4343554701EEDDAADA2C9134 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		A5CB724D2D69FC3EF4A9EE2B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -631,7 +577,6 @@
 		};
 		461E522D1E667B65000EB185 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78645EA40DA635EA01DA5D75 /* Pods-SocialMediaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -647,7 +592,6 @@
 		};
 		461E522E1E667B65000EB185 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02FCFD5A83D8A0DCF7E68582 /* Pods-SocialMediaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

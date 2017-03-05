@@ -11,11 +11,6 @@ target 'SocialMedia' do
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
   pod 'FBSDKLoginKit'
-  pod 'SwiftKeychainWrapper'
-
-  target 'SocialMediaTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+  pod 'SwiftKeychainWrapper', :git => 'https://github.com/jrendel/SwiftKeychainWrapper.git', :branch => 'master'
 
 end
