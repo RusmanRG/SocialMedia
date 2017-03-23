@@ -47,11 +47,13 @@ class SigninVC: UIViewController {
             } else {
                 print("RUSS: Successfully authenticated with Facebook")
                 let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
-                firebaseAuth(credential) 
+                self.firebaseAuth(credential)
             }
          
         }
         
+    }
+    
         func firebaseAuth(_ credential: FIRAuthCredential) {
             FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
                 if error != nil {
@@ -59,6 +61,12 @@ class SigninVC: UIViewController {
                 
                 } else {
                     print("RUSS: Successfully authenticated with Firebase")
+                    if let user = user {
+                        let userData = ["provider": credential.provider]
+                        self.completeSignIn(id: user.uid, userData: userData)
+                    
+                    
+                    }
                     
                     
                 }
@@ -68,33 +76,35 @@ class SigninVC: UIViewController {
         
         
         }
-        
-        
-    }
 
-
-        @IBAction func signInPressed(_ sender: Any) {
+    @IBAction func signInPressed(_ sender: Any) {
         
         if let email = emailField.text, let pwd = pwdField.text {
             FIRAuth.auth()?.signIn(withEmail: email, password: pwd, completion: { (user, error) in
                     if error == nil {
                     print("RUSS: Email user authenticated with Firebase")
-                        self.performSegue(withIdentifier: "goToFeed", sender: nil)
+                        if let user = user {
+                        let userData = ["provider": user.providerID]
+                        self.completeSignIn(id: user.uid, userData: userData)
+                            
+                        }
+                        //self.performSegue(withIdentifier: "goToFeed", sender: nil)
                 
                     } else {
                         FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: { (user, error) in
                             if error != nil {
                                 print("RUSS: Unable to authenticate with Firebase using email")
                                 if let user = user {
-                                    completeSignIn(id: user.uid)
-                                
-                                
+                                    let userData = ["provider": user.providerID]
+                                    self.completeSignIn(id: user.uid, userData: userData)
                                 
                                 }
+                                
                             } else {
                                 print("RUSS: Successfully authenticated with Firebase")
                                 if let user = user {
-                                completeSignIn(id: "user.uid")
+                                    let userData = ["provider": user.providerID]
+                                self.completeSignIn(id: user.uid, userData: userData)
                                     
                                 }
                             }
@@ -110,8 +120,11 @@ class SigninVC: UIViewController {
         
         
         }
+            
+    }
       
-        func completeSignIn(id: String) {
+            func completeSignIn(id: String, userData: Dictionary<String, String>) {
+            DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
             let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
             print("RUSS: Data saved to keychain \(keychainResult)")
             performSegue(withIdentifier: "goToFeed", sender: nil)
@@ -119,4 +132,3 @@ class SigninVC: UIViewController {
         }
         
     }
-}

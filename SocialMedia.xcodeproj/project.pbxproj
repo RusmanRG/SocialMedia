@@ -21,6 +21,8 @@
 		461E52C31E670479000EB185 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 461E52BE1E670479000EB185 /* GFQuery.m */; };
 		461E52C71E6704EE000EB185 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 461E52C61E6704EE000EB185 /* GoogleService-Info.plist */; };
 		4649A13F1E719A3200D85804 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4649A13E1E719A3200D85804 /* CircleView.swift */; };
+		464C54BE1E78158100EB262E /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464C54BD1E78158100EB262E /* PostCell.swift */; };
+		464EFA5A1E82103300B9AD73 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464EFA591E82103300B9AD73 /* DataService.swift */; };
 		46EA48C91E699F34000669A9 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA48C81E699F34000669A9 /* FancyView.swift */; };
 		46EA48CC1E69A0E5000669A9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA48CB1E69A0E5000669A9 /* Constants.swift */; };
 		46EA48CE1E69A7CA000669A9 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA48CD1E69A7CA000669A9 /* RoundBtn.swift */; };
@@ -69,6 +71,8 @@
 		461E52BE1E670479000EB185 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
 		461E52C61E6704EE000EB185 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "GeoFire/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4649A13E1E719A3200D85804 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		464C54BD1E78158100EB262E /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		464EFA591E82103300B9AD73 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		46EA48C81E699F34000669A9 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		46EA48CB1E69A0E5000669A9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		46EA48CD1E69A7CA000669A9 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 		461E520E1E667B65000EB185 /* SocialMedia */ = {
 			isa = PBXGroup;
 			children = (
+				464EFA581E820FE200B9AD73 /* Services */,
 				4616F9E71E6E66C100FB5297 /* SocialMedia.entitlements */,
 				46EA48CA1E69A084000669A9 /* Util */,
 				461E52AD1E670479000EB185 /* GeoFire */,
@@ -210,6 +215,14 @@
 			path = Implementation;
 			sourceTree = "<group>";
 		};
+		464EFA581E820FE200B9AD73 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				464EFA591E82103300B9AD73 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		46EA48C71E699ECA000669A9 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +231,7 @@
 				46EA48D11E69B5A4000669A9 /* TextFieldBorder.swift */,
 				46EA48D31E6AF3F3000669A9 /* SigninBtn.swift */,
 				4649A13E1E719A3200D85804 /* CircleView.swift */,
+				464C54BD1E78158100EB262E /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -417,6 +431,7 @@
 				461E52101E667B65000EB185 /* AppDelegate.swift in Sources */,
 				461E52BF1E670479000EB185 /* GeoFire.m in Sources */,
 				4616F9E61E6E4B7200FB5297 /* FeedVC.swift in Sources */,
+				464EFA5A1E82103300B9AD73 /* DataService.swift in Sources */,
 				46EA48D41E6AF3F3000669A9 /* SigninBtn.swift in Sources */,
 				46EA48D21E69B5A4000669A9 /* TextFieldBorder.swift in Sources */,
 				461E52C21E670479000EB185 /* GFGeoHashQuery.m in Sources */,
@@ -424,6 +439,7 @@
 				461E52C31E670479000EB185 /* GFQuery.m in Sources */,
 				4649A13F1E719A3200D85804 /* CircleView.swift in Sources */,
 				46EA48CC1E69A0E5000669A9 /* Constants.swift in Sources */,
+				464C54BE1E78158100EB262E /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
